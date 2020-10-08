@@ -1,0 +1,121 @@
+/* .display-block{display: block !important;} */
+ul{
+    width: 250px;
+    height: 100vh;
+    background: #eee;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    z-index: 9999;
+    background: #d6d6ff;
+}
+
+.item {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align: justify;
+    visibility: hidden;
+    opacity: 0;
+    transition: transform 2s;
+    border-bottom: 2px solid #9300a78c;
+    background: #9d4bef63;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+.item:nth-child(1) {
+    animation: display 0s .3s 1 normal forwards ease-out
+}
+.item:nth-child(2) {
+    animation: display 0s .6s 1 normal forwards ease-out
+}
+.item:nth-child(3) {
+    animation: display 0s .9s 1 normal forwards ease-out
+}
+.item:nth-child(4) {
+    animation: display 0s 1.2s 1 normal forwards ease-out
+}
+.item:nth-child(5) {
+    animation: display 0s 1.5s 1 normal forwards ease-out
+}
+.item:nth-child(6) {
+    animation: display 0s 1.8s 1 normal forwards ease-out
+}
+
+@keyframes display {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+  }
+
+
+/* @keyframes fadeInLeft {
+    from {
+        -webkit-transform: translatex(-100px);
+        -moz-transform: translatex(-100px);
+        -o-transform: translatex(-100px);
+        transform: translatex(-100px);
+    }
+    to {
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+.display-block {
+    -webkit-animation-name: fadeInLeft;
+    -moz-animation-name: fadeInLeft;
+    -o-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+} */
+
+.fadeInLeft{ 
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInLeft
+}
+@keyframes fadeInLeft {
+    from { 
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
+
+.fadeOutLeft { 
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeOutLeft
+}
+@keyframes fadeOutLeft {
+    from { opacity: 1 }
+    to {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}

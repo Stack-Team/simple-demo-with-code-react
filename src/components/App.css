@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+}
+.card{
+  display: flex;
+}
+.active{
+  background: linear-gradient(45deg, red , blue);
+  color: white;
+}
+h1{
+  margin: 0%;
+  padding: 10px 0px 10px 0px;
+}
+a{text-decoration: none;}
+.fa-2x{font-size: 20px;height: 20px;width: 20px;}
+
+.display-block{display: block !important;}
+.display-none{display: none !important;}
+.row{
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.justify-content-center{justify-content: center;}
+
+@media only screen and (max-width: 992px) {
+  .col-lg-3 {
+      max-width: 18%;
+      flex: 0 0 18%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .col-md-6 {
+      max-width: 50%;
+      flex: 0 0 50%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .col-sm-12 {
+      max-width: 100%;
+      flex: 0 0 100%;
+  }
+}

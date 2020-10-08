@@ -1,0 +1,21 @@
+.description{text-align: justify;}
+.display-block{display: block !important;}
+.display-none{display: none !important;}
+.navbar {
+    display: flex;
+    align-items: center;
+    
+    background: rebeccapurple;
+    color: white;
+    font-family: Helvetica;
+    font-weight: 300;
+}
+.navbar__title {
+    margin-right: auto;
+    padding: 12px 16px !important;
+}
+.navbar__item {
+    padding: 16px 16px;
+    cursor: pointer;
+    vertical-align: middle;
+}
